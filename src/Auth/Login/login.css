@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Metal&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Roboto:wght@400;500&display=swap');
+#login {
+  position: absolute;
+  width: 35vw;
+  height: 35vw;
+  border: 1px solid #662113;
+  border-radius: 2vw;
+  margin-left: 60vw;
+  margin-top: 14.5vh;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+input {
+  width: 27.5vw;
+  height: 4.2vw;
+  margin-left: 2.5vw;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding-left: 2vw;
+}
+
+#log_head {
+  font-family: "Metal", cursive;
+  font-size: 3.5vw;
+  margin: 0;
+  margin-top: 1.5vw;
+  text-align: center;
+  color: #662113;
+}
+
+.error {
+  color: red;
+  font-size: 0.8vw;
+  margin: 0;
+  margin-left: 2.6vw;
+  margin-top: 0.2vw;
+  visibility: hidden;
+}
+
+#login pre {
+  font-size: 1.1vw;
+  margin-left: 24vw;
+  width: 11vw;
+  color: #c1694f;
+  cursor: pointer;
+  font-family: "Roboto";
+}
+
+#log_btn {
+  cursor: pointer;
+  width: 30vw;
+  height: 3.5vw;
+  margin-left: 2.5vw;
+  background: #c1694f;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 3.3vw;
+  color: white;
+  font-size: 1.7vw;
+}
+
+#footer_msg {
+  text-align: center;
+  font-size: 1.1vw;
+  margin-bottom: 1.5vw;
+}
+
+#footer_msg span {
+    font-size: 1.3vw;
+    font-weight: 800;
+  color: #c1694f;
+  cursor: pointer;
+}

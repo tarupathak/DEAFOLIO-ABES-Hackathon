@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Metal&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Roboto:wght@400;500&display=swap');
+#heading {
+  position: absolute;
+  font-size: 2.8vw;
+  font-family: "Metal", cursive;
+  color: #662113;
+  margin-left: 3.1vw;
+  margin-top: 3vh;
+}
+
+#illustration {
+  position: absolute;
+  margin-left: 4.4vw;
+  margin-top: 23vh;
+  width: 47vw;
+}
+
+#heading img {
+  width: 2.2vw;
+  margin-right: 0.3vw;
+}
+
+#heading p{
+    width: 21.2vw;
+    font-size: 1.4vw;
+    margin: 0;
+    font-family: 'Roboto';
+font-style: italic;
+}

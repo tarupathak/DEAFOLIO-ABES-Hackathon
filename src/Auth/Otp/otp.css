@@ -1,0 +1,39 @@
+#otp{
+    position: absolute;
+  width: 35vw;
+  height: 38vw;
+  border: 1px solid #662113;
+  border-radius: 2vw;
+  margin-left: 30vw;
+  margin-top: 15vh;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#otpblock{
+    display: flex;
+}
+
+.otpbox{
+    padding-left: 1vw;
+    border: 1px solid #000000;
+    width: 3.5vw;
+    height: 4.8vw;
+    border-radius: 0.8vw;
+    margin-left: 3.2vw;
+}
+
+#otp_ques{
+    margin-left: 3.5vw;
+}
+
+#otp_ques span{
+    color: #C1694F;
+    cursor: pointer;
+}
+
+#foot{
+    margin-bottom: 5vw;
+}
