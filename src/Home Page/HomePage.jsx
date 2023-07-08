@@ -6,16 +6,35 @@ import signCard from "../Images/signCard.svg";
 import getHired from "../Images/getHired.svg";
 import homeImg2 from "../Images/homeImg2.svg";
 import resume from "../Images/resume.svg";
+import Logo from "../Auth/components/logo";
+import '../Components/comp.css'
+import Navbar from "../Components/Nav";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+  const Navhandler = useNavigate();
+  const userToken = localStorage.getItem("accessToken");
   return (
     <>
-      <div id="homePage">
+      {/* <div style={{"display":"flex","flexDirection":"column"}}>
+        <Logo />
+        <ul id="nav">
+          <li onClick={() => Navhandler("/home")}>Home</li>
+          <li onClick={() => Navhandler("/saign-language")}>Sign Languages</li>
+          <li onClick={() => Navhandler("/companies")}>Companies</li>
+          {userToken ? (
+            <li onClick={() => Navhandler("/profile")}>Profile</li>
+          ) : (
+            <li onClick={() => Navhandler("/login")}>Log In/Sign Up </li>
+          )}
+        </ul>
+      </div> */}
+      <div className="homePage">
         <div className="topText">
           Welcome to Deafolio, an online platform where you can learn and get
           hired.
         </div>
-        <div id="home-img">
+        <div className="home-img">
           <img src={homeImg} alt="homepage-image" />
         </div>
         <div id="infoCards">

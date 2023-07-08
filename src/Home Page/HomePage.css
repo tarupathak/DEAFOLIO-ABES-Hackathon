@@ -1,4 +1,4 @@
-#homePage {
+.homePage {
   display: flex;
   flex-direction: column;
 
@@ -14,7 +14,7 @@
   line-height: normal;
 }
 
-#home-img img {
+.home-img img {
   width: 60vw;
 }
 
