@@ -4,8 +4,8 @@ import homeImg from "../Images/homeImg.svg";
 import profileCard from "../Images/profileCard.svg";
 import signCard from "../Images/signCard.svg";
 import getHired from "../Images/getHired.svg";
-import homeImg2 from "../Images/homeImg2.svg"
-
+import homeImg2 from "../Images/homeImg2.svg";
+import resume from "../Images/resume.svg";
 
 const HomePage = () => {
   return (
@@ -38,7 +38,22 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div id="homeImg2"><img src={homeImg2} alt="homeImg2"/></div>
+        <div id="homeImg2">
+          <img src={homeImg2} alt="homeImg2" />
+        </div>
+        <div id="resumePart">
+          <div id="text">
+            <p id="head">Make your resume and show it on your profile.</p>
+            <p id="discription">
+              Make your portfolio and show it on your profile. Get hired with
+              the help of your profile. We will mail you as soon as your
+              portfolio gets shortlisted.
+            </p>
+          </div>
+          <div>
+            <img src={resume} alt="resume" />
+          </div>
+        </div>
       </div>
     </>
   );
