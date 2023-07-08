@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Metal&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Roboto:wght@400;500&display=swap');
 #heading {
-  position: absolute;
   font-size: 2.8vw;
   font-family: "Metal", cursive;
   color: #662113;
