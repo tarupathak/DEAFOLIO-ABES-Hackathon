@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Alkalami&family=Roboto:wght@400;500&display=swap");
 
 #nav {
-  float: right;
   display: flex;
   justify-content: space-between;
   width: 50vw;
@@ -16,6 +15,7 @@
   color: #662113;
   cursor: pointer;
   padding: 1vw 2vw;
+  height: fit-content;
 }
 
 #nav li:hover{

@@ -6,6 +6,7 @@ import ForgotApp from './Auth/forgot_password/forgot';
 import ResetApp from './Auth/reset_password/reset';
 import OtpApp from './Auth/Otp/otp';
 import ProfilePage from './Profile/ProfilePage';
+import CompanyPage from './ComapnyPage/CompanyPage';
 
 function App() {
   return <BrowserRouter>
@@ -19,6 +20,7 @@ function App() {
     <Route path="/phoneotp" element={<PhoneOTP />}></Route>
     <Route path="/set_password" element={<Setpass />}></Route> */}
     <Route path="/profile" element={<ProfilePage />}></Route>
+    <Route path="/companies" element={<CompanyPage />}></Route>
   </Routes>
 </BrowserRouter>;
 }
