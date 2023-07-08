@@ -8,8 +8,15 @@ const Navbar = () => {
   const userToken = localStorage.getItem("accessToken");
   console.log(userToken);
   return (
-    <div>
-    {/* <Logo /> */}
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        width: "100vw",
+        marginBottom: "3vw"
+      }}
+    >
+      <Logo />
       <ul id="nav">
         <li onClick={() => Navhandler("/home")}>Home</li>
         <li onClick={() => Navhandler("/sign-language")}>Sign Languages</li>

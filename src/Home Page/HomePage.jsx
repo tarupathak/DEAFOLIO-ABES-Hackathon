@@ -16,19 +16,7 @@ const HomePage = () => {
   const userToken = localStorage.getItem("accessToken");
   return (
     <>
-      {/* <div style={{"display":"flex","flexDirection":"column"}}>
-        <Logo />
-        <ul id="nav">
-          <li onClick={() => Navhandler("/home")}>Home</li>
-          <li onClick={() => Navhandler("/saign-language")}>Sign Languages</li>
-          <li onClick={() => Navhandler("/companies")}>Companies</li>
-          {userToken ? (
-            <li onClick={() => Navhandler("/profile")}>Profile</li>
-          ) : (
-            <li onClick={() => Navhandler("/login")}>Log In/Sign Up </li>
-          )}
-        </ul>
-      </div> */}
+     <Navbar />
       <div className="homePage">
         <div className="topText">
           Welcome to Deafolio, an online platform where you can learn and get

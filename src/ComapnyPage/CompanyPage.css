@@ -1,15 +1,103 @@
+#company-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .companyPara {
-    width: 80vw;
+  width: 80vw;
   color: #662113;
   text-align: center;
-  font-size: 2.5vw;
+  font-size: 2vw;
   font-style: normal;
   font-weight: 700;
+}
+
+#companyImg {
+  width: 60vw;
+}
+
+.companyPara2 {
+  width: 80vw;
+  color: #662113;
+  text-align: center;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 400;
   line-height: normal;
   margin-left: 10vw;
 }
 
-#companyImg{
-    width: 60vw;
-    margin-left: 20vw;
+.company-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 79vw;
+  height: 25vw;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.job-role {
+  color: #662113;
+  font-family: Outfit;
+  font-size: 2.6vw;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.comp-name {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.6vw;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.skills {
+  color: #662113;
+  font-size: 1.7vw;
+  font-weight: 600;
+}
+
+.list {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+
+.right-text {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-item {
+  margin-top: 2vw;
+}
+
+.right-text img {
+  width: 1.2vw;
+}
+
+.space {
+  margin-left: 1vw;
+}
+
+.right-text button {
+  width: 10vw;
+  margin-top: 2vw;
+  color: #662113;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 600;
+  height: 3vw;
+  border-style: none;
+  border-radius: 2vw;
+  background: #eec2ad;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
