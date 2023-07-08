@@ -3,4 +3,5 @@
 body {
   background-color: white;
   font-family: 'Roboto';
+  overflow-x: hidden;
 }

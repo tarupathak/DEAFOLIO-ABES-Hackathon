@@ -19,7 +19,7 @@ function App() {
     <Route path="/reset_password" element={<ResetApp />}></Route>
     <Route path="/otp" element={<OtpApp />}></Route>
     <Route path="/home" element={<HomePage />}></Route>
-    <Route path='/signLanguage' element={<SignPage/>}></Route>
+    <Route path='/sign-language' element={<SignPage/>}></Route>
     {/* <Route path="/authphone" element={<Phone />}></Route>
     <Route path="/phoneotp" element={<PhoneOTP />}></Route>
     <Route path="/set_password" element={<Setpass />}></Route> */}
