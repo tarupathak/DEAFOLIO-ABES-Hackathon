@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../components/logo";
 import "./forgot.css"
-import arrow from "./arrow.svg"
+import arrow from "../images/arrow.svg"
 import {useNavigate} from "react-router-dom";
 
 const ForgotApp = () => {
