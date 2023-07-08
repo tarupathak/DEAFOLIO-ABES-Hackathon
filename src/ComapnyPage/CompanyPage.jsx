@@ -41,7 +41,7 @@ const CompanyPage = () => {
             </div>
           </div>
           <div className="right-text">
-            <div className="text-item"> 
+            <div className="text-item">
               <img src={location} alt="location" />
               <span className="space"></span>
               <span className="list">Gurgaon</span>

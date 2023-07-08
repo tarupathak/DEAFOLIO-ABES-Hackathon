@@ -25,6 +25,7 @@ function App() {
     <Route path="/set_password" element={<Setpass />}></Route> */}
     <Route path="/profile" element={<ProfilePage />}></Route>
     <Route path="/companies" element={<CompanyPage />}></Route>
+    <Route path='/profile' element={<ProfilePage />}></Route>
   </Routes>
 </BrowserRouter>;
 }
