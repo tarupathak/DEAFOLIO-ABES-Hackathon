@@ -18,7 +18,7 @@ const Navbar = () => {
     >
       <Logo />
       <ul id="nav">
-        <li onClick={() => Navhandler("/home")}>Home</li>
+        <li onClick={() => Navhandler("/")}>Home</li>
         <li onClick={() => Navhandler("/sign-language")}>Sign Languages</li>
         <li onClick={() => Navhandler("/companies")}>Companies</li>
         {userToken ? (
