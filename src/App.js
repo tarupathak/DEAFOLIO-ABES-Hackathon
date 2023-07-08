@@ -7,6 +7,8 @@ import ResetApp from './Auth/reset_password/reset';
 import OtpApp from './Auth/Otp/otp';
 import ProfilePage from './Profile/ProfilePage';
 import CompanyPage from './ComapnyPage/CompanyPage';
+import HomePage from './Home Page/HomePage';
+import SignPage from './Sign Language Page/SignPage';
 
 function App() {
   return <BrowserRouter>
@@ -16,6 +18,8 @@ function App() {
     <Route path="/forgot_password" element={<ForgotApp />}></Route>
     <Route path="/reset_password" element={<ResetApp />}></Route>
     <Route path="/otp" element={<OtpApp />}></Route>
+    <Route path="/home" element={<HomePage />}></Route>
+    <Route path='/signLanguage' element={<SignPage/>}></Route>
     {/* <Route path="/authphone" element={<Phone />}></Route>
     <Route path="/phoneotp" element={<PhoneOTP />}></Route>
     <Route path="/set_password" element={<Setpass />}></Route> */}
