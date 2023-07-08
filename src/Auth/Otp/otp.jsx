@@ -1,25 +1,86 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../components/logo";
-import "./otp.css"
-import {useNavigate} from "react-router-dom";
+import "./otp.css";
+import { useNavigate } from "react-router-dom";
+import OtpInput from "react-otp-input";
+import BaseUrl from "../../utils/BaseUrl";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const OtpApp = () => {
-    const Navhandler = useNavigate()
-    return<div>
-        <Logo />
-        <div id="otp">
+  const Navhandler = useNavigate();
+  const [otp, setOtp] = useState("");
+
+  function handleapi() {
+    const email = localStorage.getItem("email");
+    console.log(email);
+    BaseUrl.post("/api/auth/verifyRegister", {
+      email: email,
+      otp: otp,
+    })
+      .then((res) => {
+        console.log(res.data);
+        if (res.status === 200) {
+          localStorage.setItem("otp", otp);
+          Navhandler("/login");
+        }
+      })
+      .catch((err) => {
+        toast.error("wrong otp");
+        console.log(err)
+      });
+  }
+  function resendotp() {
+    const email = localStorage.getItem("email");
+    const password = localStorage.getItem("password");
+    const fullName = localStorage.getItem("fullName");
+    BaseUrl.post("api/auth/signup", {
+      email: email,
+      password: password,
+      fullName: fullName,
+    })
+    .then((res) =>
+    {console.log(res)}
+    )
+    .err((err) => {
+      console.log(err)
+    })
+  }
+
+  return (
+    <div>
+      <Logo />
+      <div id="otp">
         <div>
-            <p id="log_head">Check for OTP</p>
-            <p id="otp_msg">Write your one time password here!</p>
-            </div>
-            <div id="otpblock">
-            <input className="otpbox" /><input className="otpbox" /><input className="otpbox" /><input className="otpbox" />
-            </div>
-            <div id="otp_ques">Didn't get OTP? <span>Resend OTP</span></div>
-            <div id="log_btn">Verify</div>                                   
-            <div id="foot" />
+          <p id="log_head">Check for OTP</p>
+          <p id="otp_msg">Write your one time password here!</p>
         </div>
+        <OtpInput
+          value={otp}
+          onChange={setOtp}
+          numInputs={4}
+          renderSeparator={<span> </span>}
+          renderInput={(props) => <input {...props} />}
+          inputStyle={{
+            width: "4vw",
+            height: "4vw",
+            margin: "0 2vw",
+            fontSize: "2rem",
+            borderRadius: "4px",
+            border: "1px solid rgba(0,0,0,.3)",
+            padding: "0"
+          }}
+        />
+        <div id="otp_ques">
+          Didn't get OTP? <span onClick={resendotp}>Resend OTP</span>
+        </div>
+        <div id="log_btn" onClick={handleapi}>
+          Verify
+        </div>
+        <div id="foot" />
+      </div>
     </div>
-}
+  );
+};
 
 export default OtpApp;

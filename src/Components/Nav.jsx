@@ -26,6 +26,7 @@ const Navbar = () => {
         ) : (
           <li onClick={() => Navhandler("/login")}>Log In/Sign Up </li>
         )}
+        {userToken && <li onClick={() =>{Navhandler("/login");localStorage.clear()}}>Log Out </li>}
       </ul>
     </div>
   );

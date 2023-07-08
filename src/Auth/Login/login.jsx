@@ -5,7 +5,7 @@ import "./login.css";
 import { useNavigate } from "react-router-dom";
 import BaseUrl from "../../utils/BaseUrl";
 import { ToastContainer, toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 
 const LoginApp = () => {
   const Navhandler = useNavigate();
@@ -30,39 +30,42 @@ const LoginApp = () => {
   }
 
   function handlepass(e) {
-    if((/^(?=.*[0-9])(?=.*[!@#$%^_=&*])[a-zA-Z0-9!@#$%_=^&*]{8,100}$/).test(e.target.value) || e.target.value==="")
-    {
+    if (
+      /^(?=.*[0-9])(?=.*[!@#$%^_=&*])[a-zA-Z0-9!@#$%_=^&*]{8,100}$/.test(
+        e.target.value
+      ) ||
+      e.target.value === ""
+    ) {
       setpassword(e.target.value);
       document.getElementById("passError").style.visibility = "hidden";
-      if(e.target.value==="")
-      {document.getElementById("password").style.borderColor = "white";}
-      else
-      {document.getElementById("password").style.borderColor = "#66DF98";}
-    }
-    else{
-        setpassword("")
+      if (e.target.value === "") {
+        document.getElementById("password").style.borderColor = "black";
+      } else {
+        document.getElementById("password").style.borderColor = "#66DF98";
+      }
+    } else {
+      setpassword("");
       document.getElementById("passError").style.visibility = "visible";
       document.getElementById("password").style.borderColor = "#CF6679";
     }
   }
 
   function handleLogin() {
-    if(email && password)
-    {
+    if (email && password) {
       BaseUrl.post("api/auth/login", {
         email: email,
         password: password,
       })
         .then((res) => {
-          if(res.status===200)
-          Navhandler("/")
+          if (res.status === 200) {
+            localStorage.setItem("accessToken", res.data.accessToken);
+            Navhandler("/");
+          }
         })
         .catch((err) => {
-          toast.error(err.response.data.message)
+          toast.error(err.response.data.message);
         });
-    }
-    else
-    toast.error("Enter All Details")
+    } else toast.error("Enter All Details");
   }
 
   return (
@@ -72,15 +75,25 @@ const LoginApp = () => {
       <div id="login">
         <p id="log_head">Welcome to Deafolio</p>
         <div>
-          <input id="email" placeholder="Enter your email address" onChange={handlemail}/>
+          <input
+            id="email"
+            placeholder="Enter your email address"
+            onChange={handlemail}
+          />
           <p id="logError" className="error">
             Enter valid Email Address
           </p>
         </div>
         <div>
-          <input type="password" id="password" placeholder="Enter your password" onChange={handlepass}/>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+            onChange={handlepass}
+          />
           <p id="passError" className="error">
-            Must be at least 8 characters with 1 special character,<br/>1 number,1 capital,1 small alphabet.
+            Must be at least 8 characters with 1 special character,
+            <br />1 number,1 capital,1 small alphabet.
           </p>
           <pre onClick={() => Navhandler("/forgot_password")}>
             Forgot password?
