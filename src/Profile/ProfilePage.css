@@ -1,4 +1,115 @@
 #profileBox {
-    border: 1px solid rgba(0, 0, 0, 0.50);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 75vw;
+  height: auto;
+  padding: 2vw;
+  margin-bottom: 3vw;
+}
+
+#back-photo {
+  width: 75vw;
+  height: 13vw;
+  background: #c1694f;
+}
+
+#profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#profile-photo {
+  width: 8vw;
+  height: 8vw;
+  margin-left: 33vw;
+  margin-top: -8vw;
+  position: absolute;
+  border-radius: 50%;
+  border: 0.6vw solid #fff;
+  background: lightgray 50% / cover no-repeat;
+}
+
+#about {
+  margin-top: 4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#name {
+  color: #000;
+  font-size: 2.4vw;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 0.4vw;
+}
+
+#about-me {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.3vw;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 0.4vw;
+}
+
+#loc {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.3vw;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.aboutMebox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 75vw;
+  height: auto;
+  padding: 2vw;
+  margin-bottom: 3vw;
+}
+
+.aboutHead {
+  color: #662113;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+}
+
+.col {
+  color: #662113;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+}
+
+.space2 {
+  margin: 2vw;
+}
+
+#tech-list li {
+  margin-top: 2vw;
+}
+
+.resum-img img {
+  align-items: center;
+}
+
+.edit img {
+  height: 1.3vw;
+  margin-left: 73vw;
+  cursor: pointer;
+}
+
+.edit1 img {
+  height: 1.3vw;
+  margin-left: 73vw;
+  margin-top: 2vw;
+  cursor: pointer;
 }
