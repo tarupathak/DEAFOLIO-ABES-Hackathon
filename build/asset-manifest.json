@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.20129157.css",
+    "main.js": "/static/js/main.5cb6808b.js",
+    "static/media/homeImg.svg": "/static/media/homeImg.cb2d7567d6a399ef1ecc9c19955e3195.svg",
+    "static/media/signImg1.svg": "/static/media/signImg1.a2c6e37baff3869de7eb1dbec29f7ce6.svg",
+    "static/media/illustration.svg": "/static/media/illustration.76135a1aa5a752cec26e2a588b5a07e4.svg",
+    "static/media/company.svg": "/static/media/company.ac25a2328923aafaa012d33e023ce658.svg",
+    "static/media/signs.svg": "/static/media/signs.05ce805d7585a3cacded3bf1b62fa120.svg",
+    "static/media/profileCard.svg": "/static/media/profileCard.dcb7fef39d7e39b1973a151c809de6c2.svg",
+    "static/media/getHired.svg": "/static/media/getHired.7afec81815ca1552f90b39534fd399e5.svg",
+    "static/media/homeImg2.svg": "/static/media/homeImg2.088510986d061648830453cf5ceee2e0.svg",
+    "static/media/resume.svg": "/static/media/resume.5b4df8deef6fe784c5b17eeb7bca6f1a.svg",
+    "static/media/signCard.svg": "/static/media/signCard.5dd4855653becbfc0e74052affbecd21.svg",
+    "static/media/logo.svg": "/static/media/logo.104fc183c48b1bdaad206a4d40d28c6e.svg",
+    "static/media/start.svg": "/static/media/start.b1128d6b58d1a53625795e85415e85a2.svg",
+    "static/media/time.svg": "/static/media/time.d83859dc22f34ea3ca809deeb411b0ad.svg",
+    "static/media/location.svg": "/static/media/location.0d9d41633ee77987da0e189be3219184.svg",
+    "static/media/pay.svg": "/static/media/pay.3e7361e873d3080f3fe283e2120f5283.svg",
+    "index.html": "/index.html",
+    "static/media/arrow.svg": "/static/media/arrow.678d954f85cbddb5441bdb449581d133.svg",
+    "main.20129157.css.map": "/static/css/main.20129157.css.map",
+    "main.5cb6808b.js.map": "/static/js/main.5cb6808b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20129157.css",
+    "static/js/main.5cb6808b.js"
+  ]
+}

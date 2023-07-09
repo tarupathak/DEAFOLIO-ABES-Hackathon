@@ -9,6 +9,7 @@ import ProfilePage from './Profile/ProfilePage';
 import CompanyPage from './ComapnyPage/CompanyPage';
 import HomePage from './Home Page/HomePage';
 import SignPage from './Sign Language Page/SignPage';
+import ForgetOtpApp from './Auth/ForgetOtp/forgetOtp';
 
 function App() {
   return <BrowserRouter>
@@ -18,12 +19,9 @@ function App() {
     <Route path="/forgot_password" element={<ForgotApp />}></Route>
     <Route path="/reset_password" element={<ResetApp />}></Route>
     <Route path="/otp" element={<OtpApp />}></Route>
+    <Route path="/forget-otp" element={<ForgetOtpApp />}></Route>
     <Route path="/" element={<HomePage />}></Route>
     <Route path='/sign-language' element={<SignPage/>}></Route>
-    {/* <Route path="/authphone" element={<Phone />}></Route>
-    <Route path="/phoneotp" element={<PhoneOTP />}></Route>
-    <Route path="/set_password" element={<Setpass />}></Route> */}
-    <Route path="/profile" element={<ProfilePage />}></Route>
     <Route path="/companies" element={<CompanyPage />}></Route>
     <Route path='/profile' element={<ProfilePage />}></Route>
   </Routes>
